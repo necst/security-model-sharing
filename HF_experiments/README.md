@@ -1,0 +1,3 @@
+This folder contains all the artifacts uploaded to Hugging Face for our tests. It also includes the scripts used to generate the artifacts, when applicable and not overlapping with PoCs (see other folders).
+
+For some artifacts (such as those on Lambda layers), we omitted the raw files but included the generation scripts, since the files contained the user paths of the author who ran the code, which might—even if unlikely—compromise the double-blind process.
