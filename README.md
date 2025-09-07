@@ -1,7 +1,7 @@
 # Security Model Sharing – Artifacts and Proof-of-Concepts
 This repository hosts the complete set of artifacts supporting the paper:
 
-“Secure by Name, Vulnerable by Design: On the (In)Security of Machine Learning Model Sharing.”
+"When Secure Isn’t: Assessing the Security of Machine Learning Model Sharing”
 
 All materials are released in the spirit of open science, enabling others to evaluate and reproduce our findings.
 
