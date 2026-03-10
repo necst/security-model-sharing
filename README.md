@@ -25,6 +25,7 @@ All materials are released in the spirit of open science, enabling others to eva
   * Raw survey responses (CSV format).
   * The questionnaire as distributed to participants.
   * Collection scripts and statistical analysis code.
+  * Wilcoxon test on the perception-shift notebook.
 
 * **Version Adoption (Keras)**
 
