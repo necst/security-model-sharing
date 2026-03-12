@@ -1,6 +1,6 @@
 ## Keras Version Adoption Analysis
 
-> **Note:** This is the experiment described in **Appendix B** and it produces **Figure 2**.
+> **Context in paper:** This is the experiment described in **Appendix B** and it produces **Figure 2**.
 
 This folder contains:
 - the BigQuery SQL query used to collect download statistics,
@@ -9,7 +9,7 @@ This folder contains:
 - and `plot_generator.ipynb`, a notebook version of the same code.
 
 `plot_generator.py` and `plot_generator.ipynb` contain the same analysis logic.
-The notebook also includes a saved execution output (run), which is useful for quick inspection in notebook workflows.
+The notebook already includes a saved execution output (run) for easy checking.
 
 ## Goal of `plot_generator.py`
 
