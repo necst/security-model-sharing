@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends bash
 RUN pip install --upgrade pip
 
 RUN pip install skops==0.11.0
+RUN pip install scikit-learn==1.7.0
 
 COPY model.skops /poc
 COPY poc_load.py /poc

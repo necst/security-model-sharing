@@ -1,0 +1,15 @@
+FROM python:3.12-slim
+
+WORKDIR /poc
+
+RUN apt-get update && apt-get install -y --no-install-recommends bash
+
+RUN pip install --upgrade pip
+
+RUN pip install skops==0.12.0
+RUN pip install scikit-learn==1.7.0
+
+COPY generate_evil_model.py /poc
+COPY poc.py /poc
+
+RUN python generate_evil_model.py
