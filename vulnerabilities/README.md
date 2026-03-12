@@ -2,6 +2,10 @@
 
 This folder contains proof-of-concept (PoC) exploits for Keras and skops vulnerabilities.
 
+> **Context in paper/report:**
+> - `KV1`, `KV2`, `KV3` correspond to the content of **Section 4.1**.
+> - `SV1`, `SV2`, `SV3` correspond to the content of **Section 4.2**.
+
 ## Goal and success criteria
 
 For every PoC in this folder, the exploit goal is to spawn `/bin/sh`.
