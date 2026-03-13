@@ -1,60 +1,74 @@
-# Security Model Sharing – Artifacts and Proof-of-Concepts
-This repository hosts the complete set of artifacts supporting the paper:
+# Artifact Evaluation Package
 
-"When Secure Isn’t: Assessing the Security of Machine Learning Model Sharing”
+This repository contains the full artifact package for the paper:
 
-All materials are released in the spirit of open science, enabling others to evaluate and reproduce our findings.
+**“On the (In)Security of Loading Machine Learning Models”** *(former title: “When Secure Isn’t: Assessing the Security of Machine Learning Model Sharing”)*
 
-## Repository Contents
+The package is organized to support artifact evaluation along three dimensions:
 
-* **CVE Proof-of-Concepts (PoCs)**
+- **Availability**: raw data, scripts, notebooks, PoCs, and model artifacts are included.
+- **Reproducibility**: results can be recomputed from the provided artifacts (survey statistics/tests, plots, and PoC executions).
+- **Functionality**: scripts and PoCs run as intended and produce the expected outputs.
 
-  * Each folder (e.g., `CVE-2025-1550/`, `CVE-2025-54412/`, etc.) contains:
+## Mapping between folders and paper sections/results
 
-    * The complete report as it was published at paper review time (`report.md`).
-    * Information on the vulnerability, references, and links to check for updates (`README.md`).    
-    * Reproducibility scripts, Docker containers, and complete PoCs for the corresponding CVE.
+### 1) Vulnerability PoCs
 
-* **HF Experiments – Model Artifacts**
+- Folder: `vulnerabilities/`
+- Paper mapping:
+  - `KV1`, `KV2`, `KV3` → **Section 4.1**
+  - `SV1`, `SV2`, `SV3` → **Section 4.2**
+- Goal: PoCs achieve arbitrary code execution at model load time, despite framework-level security measures (e.g., Keras `safe_mode`), with success indicated by spawning `/bin/sh` during loading.
 
-  * Model artifacts uploaded to Hugging Face for evaluation.
-  * Associated scripts for generating these models.
+Each vulnerability subfolder includes:
+- a `README.md` with instructions,
+- a `report.md` snapshot,
+- a `docker/` environment,
+- and the PoC artifacts/scripts.
 
-* **Survey Data and Tools**
+### 2) Hugging Face scanning experiments
 
-  * Raw survey responses (CSV format).
-  * The questionnaire as distributed to participants.
-  * Collection scripts and statistical analysis code.
-  * Wilcoxon test on the perception-shift notebook.
+- Folder: `HF_experiments/`
+- Paper mapping:
+  - **Section 4.3**, **Table 3**
+- Goal: availability of all PoC artifacts used for the Hugging Face tests.
 
-* **Version Adoption (Keras)**
+### 3) Survey analysis
 
-  * Scripts and data supporting the study in the appendix on Keras version adoption.
+- Folder: `survey/`
+- Paper mapping:
+  - **Section 5 (UP2)**
+- Goal: the provided raw responses and analysis artifacts reproduce the reported survey statistics, plots, and Wilcoxon perception-shift results.
+- Contains:
+  - raw survey CSV,
+  - survey form copy,
+  - analysis/plot scripts,
+  - notebook versions,
+  - Wilcoxon perception-shift test notebook.
 
-## Usage
+### 4) Keras version adoption study
 
-**Disclaimer:** The provided code and artifacts are for research and educational purposes only.
-They demonstrate security issues in machine learning model sharing and must **not** be used for malicious purposes.
+- Folder: `version_adoption_keras/`
+- Paper mapping:
+  - **Appendix B**, **Figure 2**
+- Goal: the provided query output and plotting artifacts regenerate the same Keras version-adoption trend shown in Figure 2.
+- Contains:
+  - BigQuery SQL query,
+  - raw CSV export,
+  - script and notebook to regenerate the plot.
 
-To reproduce a PoC:
+## Reports and updates
 
-1. Navigate to the relevant CVE folder.
-2. Read the `report.md` for context.
-3. Check the provided link for the latest updates.
-4. Follow the instructions in `README.md` to run the PoC in a controlled environment.
-
-## Reports and Updates
-
-* Each CVE folder includes a snapshot of the report at paper review time.
-* Updates are tracked in:
+- Each vulnerability folder includes a report snapshot from paper review time.
+- Updates are tracked at:
   [https://github.com/io-no/CVE-Reports](https://github.com/io-no/CVE-Reports)
 
+## Contacts
 
-## Contact
-For questions, clarifications, or collaboration inquiries, please reach out to the authors:
+For questions, clarifications, or collaboration inquiries:
 
-* Gabriele Digregorio — [gabriele.digregorio@polimi.it](mailto:gabriele.digregorio@polimi.it)
-* Marco Di Gennaro — [marco.digennaro@polimi.it](mailto:marco.digennaro@polimi.it)
-* Stefano Zanero — [stefano.zanero@polimi.it](mailto:stefano.zanero@polimi.it)
-* Stefano Longari — [stefano.longari@polimi.it](mailto:stefano.longari@polimi.it)
-* Michele Carminati — [michele.carminati@polimi.it](mailto:michele.carminati@polimi.it)
+- Gabriele Digregorio — [gabriele.digregorio@polimi.it](mailto:gabriele.digregorio@polimi.it)
+- Marco Di Gennaro — [marco.digennaro@polimi.it](mailto:marco.digennaro@polimi.it)
+- Stefano Zanero — [stefano.zanero@polimi.it](mailto:stefano.zanero@polimi.it)
+- Stefano Longari — [stefano.longari@polimi.it](mailto:stefano.longari@polimi.it)
+- Michele Carminati — [michele.carminati@polimi.it](mailto:michele.carminati@polimi.it)
