@@ -2,7 +2,7 @@
 
 This repository contains the full artifact package for the paper:
 
-**“On the (In)Security of Loading Machine Learning Models”** *(former title: “When Secure Isn’t: Assessing the Security of Machine Learning Model Sharing”)*
+**“On the (In)Security of Loading Machine Learning Models”** *(former title: “When Secure Isn’t: Assessing the Security of Machine Learning Model Sharing”)* (IEEE S&P 2026).
 
 The package is organized to support artifact evaluation along three dimensions:
 
