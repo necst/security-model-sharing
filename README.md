@@ -26,6 +26,13 @@ Each vulnerability subfolder includes:
 - a `docker/` environment,
 - and the PoC artifacts/scripts.
 
+To run and verify all six PoCs automatically:
+
+```bash
+cd vulnerabilities/
+python3 run.py
+```
+
 ### 2) Hugging Face scanning experiments
 
 - Folder: `HF_experiments/`

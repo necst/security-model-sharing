@@ -18,3 +18,9 @@ Run the `run.sh` script inside the `docker` folder to start a container with the
 The script will automatically build the Docker image, start the container, and attach you to a bash shell inside it.
 
 Once inside the container, run the Python PoC script (`poc.py`). The PoC spawns a shell during model loading.
+
+### Expected output
+```
+root@e53f6ef4ce5e:/poc# python poc.py 
+#
+```
