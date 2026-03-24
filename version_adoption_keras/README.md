@@ -6,7 +6,8 @@ This folder contains:
 - the BigQuery SQL query used to collect download statistics,
 - the raw CSV export,
 - `plot_generator.py`, which generates the plot used in the study,
-- and `plot_generator.ipynb`, a notebook version of the same code.
+- `plot_generator.ipynb`, a notebook version of the same code,
+- and a `docker/` environment (Dockerfile, docker-compose.yml, run.sh).
 
 `plot_generator.py` and `plot_generator.ipynb` contain the same analysis logic.
 The notebook already includes a saved execution output (run) for easy checking.
@@ -37,7 +38,12 @@ The script:
 	 - `pip install pandas matplotlib`
 3. Run the plot script:
 	 - `python plot_generator.py`
-4. The plot will be displayed in an interactive window.
+4. The plot will be saved as `keras_versions.pdf` and displayed in an interactive window.
+
+### Run with Docker
+
+1. Open a terminal in `version_adoption_keras/docker/`.
+2. Run `./run.sh` to build the Docker image and execute `plot_generator.py` inside the container.
 
 ## Data source
 

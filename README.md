@@ -44,7 +44,8 @@ Each vulnerability subfolder includes:
   - survey form copy,
   - analysis/plot scripts,
   - notebook versions,
-  - Wilcoxon perception-shift test notebook.
+  - Wilcoxon perception-shift test notebook,
+  - `docker/` environment for reproducible execution.
 
 ### 4) Keras version adoption study
 
@@ -55,7 +56,8 @@ Each vulnerability subfolder includes:
 - Contains:
   - BigQuery SQL query,
   - raw CSV export,
-  - script and notebook to regenerate the plot.
+  - script and notebook to regenerate the plot,
+  - `docker/` environment for reproducible execution.
 
 ## Reports and updates
 

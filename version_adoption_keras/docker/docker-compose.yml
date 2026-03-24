@@ -1,0 +1,15 @@
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: version-adoption-keras
+    working_dir: /app
+    volumes:
+      - ..:/app/output
+    networks:
+      - version-adoption
+
+networks:
+  version-adoption:
+    driver: bridge

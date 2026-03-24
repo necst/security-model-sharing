@@ -28,4 +28,5 @@ plt.ylabel('Download Counts', fontsize=30)
 plt.xticks(rotation=0, fontsize=28)  # X-axis tick labels
 plt.yticks([], fontsize=28)          # Hide Y-axis tick labels
 plt.tight_layout()
+plt.savefig("keras_versions.pdf")
 plt.show()
