@@ -69,8 +69,7 @@ python3 run.py
 ## Reports and updates
 
 - Each vulnerability folder includes a report snapshot from paper review time.
-- Updates are tracked at:
-  [https://github.com/io-no/CVE-Reports](https://github.com/io-no/CVE-Reports)
+- Author mirror: [https://github.com/io-no/CVE-Reports](https://github.com/io-no/CVE-Reports)
 
 ## Contacts
 
