@@ -1,3 +1,7 @@
+> 🏆 **[Distinguished Artifact Award](https://www.ieee-security.org/TC/SP2026/awards_artifacts.html)** 🏆
+>
+> IEEE Symposium on Security and Privacy 2026
+
 # Artifact Evaluation Package
 
 This repository contains the full artifact package for the paper:
